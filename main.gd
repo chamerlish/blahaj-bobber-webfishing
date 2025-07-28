@@ -1,16 +1,8 @@
 extends Node
 
+const ID = "chamerlish.blahaj"
+onready var Lure = get_node("/root/SulayreLure")
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	# Fish
+	Lure.add_content(ID, "Blåhaj", "mod://Resources/blahaj_fish.tres")
